@@ -1,0 +1,68 @@
+header{   
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #DCDCDC;
+    position: fixed;
+}
+.cabecalho__item{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 60px;
+
+}
+.cabecalho__item.logo, .cabecalho__item.cadstroLogin{
+    width: 29%;
+}
+
+/* cabecalho__item logo */
+.itemLogo__link{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+.itemLogo__img{
+    width: 170px;
+}
+
+/* cabecalho__item pesquisar */
+
+.cabecalho__item.pesquisar{
+    width: 40%;
+    top: 20px;
+}
+.CabecalhoItemPesquisa{
+    border: 1px solid #BDBDBD;
+    border-radius: 40px;
+    height: 40px;
+    position: relative;
+}
+.itemPesquisar.input{
+    border-radius: 40px;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    text-indent: 10px;
+}
+.itemPesquisar.input:focus, .itemPesquisar.buttom:focus{
+    outline: 0;
+}
+.itemPesquisar.buttom{
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+/*pós cabecalho*/
+.posCabecalho{
+    padding-top: 95px;
+    width: 100%;
+    text-align: center;
+}
+.link{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px 0;
+    color: white;
+}

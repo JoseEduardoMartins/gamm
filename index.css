@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*produtos*/
+.produtos{
+    position: relative;
+    width: calc( 100% - 100px);
+    margin: auto;
+}
+.Produtos_cabecalho{
+    position: relative;
+}
+.link_verMais{
+    border: 1px solid black;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 14px 8px;
+    position: absolute;
+    right: 0px;
+    top: 1px;
+    font-weight: bold;
+    font-size: small;
+}
+table{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/*produto*/
+td{
+    text-align: center;
+}
+.linkProduto{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
