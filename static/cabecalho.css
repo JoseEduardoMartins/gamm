@@ -1,78 +1,73 @@
+/*pré cabeçalho*/
+.frete{
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+.caminhao{
+    width: 20px;
+    vertical-align: -4px;
+}
+.pre-cabecalho{
+    z-index: 999;
+    width: 100%;
+    height: 35px;
+    background-color: black;
+}
+.link_WhatsApp{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.logo_WhatsApp{
+    width: 16px;
+    vertical-align: -4px;
+}
+/*cabeçalho*/
 header{   
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid #DCDCDC;
     position: fixed;
-    top: 0;
     background-color: white;
     z-index: 999;
 }
 .cabecalho__item{
     display: inline-block;
     position: relative;
-    vertical-align: middle;
+    text-align: justify;
     height: 60px;
+    border: 1px solid red;
+    width: 32%;
+}
 
+/*cabecalho__item catalogo*/
+.item_Catalogo{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    color: black;
 }
-.cabecalho__item.logo, .cabecalho__item.cadstroLogin{
-    width: 29%;
-}
+
+
 
 /* cabecalho__item logo */
 .itemLogo__link{
     position: absolute;
-    top: 20px;
-    left: 15px;
+    top: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 .itemLogo__img{
     width: 170px;
 }
 
-/* cabecalho__item pesquisar */
-
-.cabecalho__item.pesquisar{
-    width: 40%;
-    top: 20px;
-}
-.CabecalhoItemPesquisa{
-    border: 1px solid #BDBDBD;
-    border-radius: 40px;
-    height: 40px;
-    position: relative;
-}
-.itemPesquisar.input{
-    border-radius: 40px;
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    text-indent: 10px;
-}
-.itemPesquisar.input:focus, .itemPesquisar.buttom:focus{
-    outline: 0;
-}
-.itemPesquisar.buttom{
-    width: 30px;
-    position: absolute;
-    right: 10px;
-    top: 5px;
-}
-
-/*pós cabecalho*/
-.posCabecalho{
-    margin-top: 80px;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    padding-top: 15px;
-}
-.linkPosCabecalho{
-    padding-top: 130px;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 0 20px 0;
-    color: black;
-    
-}
-.linkPosCabecalho:hover{
-    color: #BDBDBD;
+/* cabecalho__item outros */
+.cabecalho__item.outros{
+    right: 0px;
 }

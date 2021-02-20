@@ -11,9 +11,6 @@
 </head>
 <body>
     <?php include './static/cabecalho.php';?>
-
-    <img class="background-img" src="./static/img/background-img3.jpg" alt="">
-
     <div class="produtos">
         <div class="Produtos_cabecalho">
             <h1>Camisetas masculinas</h1>
