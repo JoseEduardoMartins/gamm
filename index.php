@@ -52,43 +52,5 @@
             </tr>
         </table>
     </div>
-    <div class="produtos">
-        <div class="Produtos_cabecalho">
-            <h1>Camisetas Femininas</h1>
-            <a class="link_verMais" href="#">VER MAIS</a>
-        </div>
-        <table>
-            <tr>
-                <td>	
-                    <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
-                        <p class="itemProduto nome">Camiseta Gamm</p>
-                        <p class="itemProduto preco">R$ 30,00</p>
-                    </a>
-                </td>
-                <td>	
-                    <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
-                        <p class="itemProduto nome">Camiseta Gamm</p>
-                        <p class="itemProduto preco">R$ 30,00</p>
-                    </a>
-                </td>
-                <td>	
-                    <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
-                        <p class="itemProduto nome">Camiseta Gamm</p>
-                        <p class="itemProduto preco">R$ 30,00</p>
-                    </a>
-                </td>
-                <td>	
-                    <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
-                        <p class="itemProduto nome">Camiseta Gamm</p>
-                        <p class="itemProduto preco">R$ 30,00</p>
-                    </a>
-                </td>
-            </tr>
-        </table>
-    </div>
 </body>
 </html>
