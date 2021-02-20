@@ -14,7 +14,7 @@
     </div>
 </header>
 <div class="posCabecalho">
-    <a class="link" href="#">Feminino</a>
-    <a class="link" href="#">Masculino</a>
-    <a class="link" href="#">Infantil</a>
+    <a class="linkPosCabecalho" href="#">Feminino</a>
+    <a class="linkPosCabecalho" href="#">Masculino</a>
+    <a class="linkPosCabecalho" href="#">Infantil</a>
 </div>

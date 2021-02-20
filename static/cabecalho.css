@@ -3,6 +3,8 @@ header{
     height: 80px;
     border-bottom: 1px solid #DCDCDC;
     position: fixed;
+    top: 0;
+    background-color: white;
 }
 .cabecalho__item{
     display: inline-block;
@@ -56,13 +58,20 @@ header{
 
 /*pós cabecalho*/
 .posCabecalho{
-    padding-top: 95px;
+    margin-top: 80px;
     width: 100%;
+    height: 40px;
     text-align: center;
+    padding-top: 15px;
 }
-.link{
+.linkPosCabecalho{
+    padding-top: 130px;
     font-size: 20px;
     text-decoration: none;
     padding: 0 20px 0;
-    color: white;
+    color: black;
+    
+}
+.linkPosCabecalho:hover{
+    color: #BDBDBD;
 }

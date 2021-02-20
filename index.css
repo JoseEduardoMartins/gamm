@@ -8,11 +8,15 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.background-img{
+    width: 100%;
+}
+
 /*produtos*/
 .produtos{
     position: relative;
     width: calc( 100% - 100px);
-    margin: auto;
+    margin: 20px auto 0;
 }
 .Produtos_cabecalho{
     position: relative;
