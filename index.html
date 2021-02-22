@@ -7,29 +7,58 @@
     <title>Gamm Clothing</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./static/cabecalho.css">
-    
+    <script type="text/javascript">
+        
+        function pesquisar(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.visibility="visible";
+            let img_pesquisa2 = document.getElementById("item_pesquisar2");
+            img_pesquisa2.style.visibility="hidden";
+        }
+        function reverter_pesquisa(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.visibility="hidden";
+            let img_pesquisa2 = document.getElementById("item_pesquisar2");
+            img_pesquisa2.style.visibility="visible";
+        }
+        function mudarBorda(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.borderRadius="0px";
+            img_pesquisa1.style.borderBottom="1px solid #D3D3D3";
+        }
+        function remudarBorda(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.borderBottom="0px solid #D3D3D3";
+        }
+    </script>
 </head>
 <body>
-<div class="pre-cabecalho">
-    <p class="frete"><img class="caminhao" src="./static/icon/icon_caminhao.png" alt=""> Frete Grátis nas compras acima de R$250,00.</p>
-    <a href="https://api.whatsapp.com/send?phone=5548991340640" target="_blank" class="link_WhatsApp"><img class="logo_WhatsApp" src="./static/icon/icon_whatsApp.png" alt="Logo do whatsApp"> (48) 99134-0640</a>
-</div>
-<header id="cabecalho">
-    <div id="item_catalogo" class="cabecalho__item catalogo">
-        <a href="#" class="item_catalogo primeiro">Homem</a>  
-        <a href="#" class="item_catalogo ">Mulher</a>  
-        <a href="#" class="item_catalogo " title="Indisponivel!">Criança</a>  
-    </div> 
-    <div class="cabecalho__item logo">
-        <a class="itemLogo__link" href="#"><img id="logo_img" class="itemLogo__img" src="./static/img/logoGamm.png" alt=""></a>
-    </div> 
-    <div class="cabecalho__item outros">
-        <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_pesquisa.png" alt="icone de pesquisa"></a>
-        <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_usuario.png" alt="icone de usuario"></a>
-        <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_coracao.png" alt="icone de favoritos"></a>
-        <a href="#" class="itemOutros_link ultima"><img class="itemOutros_img" src="./static/icon/icon_carrinho.png" alt="icone do carrinho"></a>
+    
+    <div class="pre-cabecalho">
+        <p class="frete"><img class="caminhao" src="./static/icon/icon_caminhao.png" alt=""> Frete Grátis nas compras acima de R$250,00.</p>
+        <a href="https://api.whatsapp.com/send?phone=5548991340640" target="_blank" class="link_WhatsApp"><img class="logo_WhatsApp" src="./static/icon/icon_whatsApp.png" alt="Logo do whatsApp"> (48) 99134-0640</a>
     </div>
-</header>
+    <header onmouseover="mudarBorda()" onmouseout="remudarBorda()" id="cabecalho">
+        <div id="item_catalogo" class="cabecalho__item catalogo">
+            <a href="#" class="item_catalogo primeiro">Homem</a>  
+            <a href="#" class="item_catalogo ">Mulher</a>  
+            <a href="#" class="item_catalogo " title="Indisponivel!">Criança</a>  
+        </div> 
+        <div class="cabecalho__item logo">
+            <a class="itemLogo__link" href="#"><img id="logo_img" class="itemLogo__img" src="./static/img/logoGamm.png" alt=""></a>
+        </div> 
+        <div class="cabecalho__item outros">
+            <form id="item_pesquisar1" class="CabecalhoItemPesquisa">
+                <input class="itemPesquisar input" type="text" name="pesquisa" minlength="1" required placeholder="Oque você procura?">
+                <input onclick='reverter_pesquisa()' class="itemPesquisar buttom" type="image" src="./static/icon/icon_pesquisa.png"  name="botaoPesquisar">
+            </form>
+            <input id="item_pesquisar2" class="itemOutros_img" onclick='pesquisar()' type="image" src="./static/icon/icon_pesquisa.png" alt="icone de pesquisa">
+            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_usuario.png" alt="icone de usuario"></a>
+            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_coracao.png" alt="icone de favoritos"></a>
+            <a href="#" class="itemOutros_link ultima"><img class="itemOutros_img" src="./static/icon/icon_carrinho.png" alt="icone do carrinho"></a>
+        </div>
+    </header>
+
     <img class="background_img" src="./static/img/background-img1.png" alt="">
 
     <div class="produtos">
@@ -37,30 +66,30 @@
             <h1>Camisetas masculinas</h1>
             <a class="link_verMais" href="#">VER MAIS</a>
         </div>
-        <table>
+        <table class="table_produtos">
             <tr>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
@@ -75,30 +104,30 @@
             <h1>Camisetas femininas</h1>
             <a class="link_verMais" href="#">VER MAIS</a>
         </div>
-        <table>
+        <table class="table_produtos">
             <tr>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td>	
+                <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
                         <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
@@ -114,14 +143,18 @@
     window.onscroll = function() {mudarCabecalho()};
 
     let header = document.getElementById('cabecalho');
+    let img_pesquisa1 = document.getElementById("item_pesquisar1");
     function mudarCabecalho() {
         let nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
         if(nVScroll>35){
             header.style.backgroundColor= 'white';
             header.style.top="0";
+            img_pesquisa1.style.borderRadius="0px";
+            img_pesquisa1.style.borderBottom="1px solid #D3D3D3";
         }else{
             header.style.backgroundColor= '';
             header.style.top="35px";
+            img_pesquisa1.style.borderBottom="0px solid #D3D3D3";
         } 
     }
 </script>

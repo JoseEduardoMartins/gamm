@@ -77,10 +77,42 @@ header:after{
 /* cabecalho__item outros */
 .cabecalho__item.outros{
     text-align: right;
+    vertical-align: 5px;
 }
+
+    .CabecalhoItemPesquisa{
+        width: 200px;
+        border-radius: 40px;
+        height: 40px;
+        position: absolute;
+        right: 144px;
+        top: 14px;
+        visibility: hidden;
+        background-color: "";
+    }
+    .itemPesquisar.input{
+        border-radius: 40px;
+        width: 200px;
+        height: 40px;
+        text-indent: 10px;
+        opacity: 0.5;
+    }
+    .itemPesquisar.input:focus, .itemPesquisar.buttom:focus{
+        outline: 0;
+    }
+    .itemPesquisar.buttom{
+        width: 25px;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+    }
+
 .itemOutros_img{
     height: 25px;
     margin: 0px 7px;
+}
+.itemOutros_img:focus{
+    outline: 0;
 }
 .itemOutros_link.ultima{
     margin-right: 15px;
