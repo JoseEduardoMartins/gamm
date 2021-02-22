@@ -9,7 +9,7 @@
         <a href="#" class="item_catalogo " title="Indisponivel!">Criança</a>  
     </div> 
     <div class="cabecalho__item logo">
-        <a class="itemLogo__link" href="#"><img id="logo_img" class="itemLogo__img" src="<?php echo $urlIconeLogo; ?>" alt=""></a>
+        <a class="itemLogo__link" href="#"><img id="logo_img" class="itemLogo__img" src="./static/img/logoGamm.png" alt=""></a>
     </div> 
     <div class="cabecalho__item outros">
         <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_pesquisa.png" alt="icone de pesquisa"></a>
