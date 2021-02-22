@@ -28,46 +28,60 @@
     width: 16px;
     vertical-align: -4px;
 }
+
 /*cabeçalho*/
 header{   
     width: 100%;
-    height: 80px;
+    height: 65px;
     position: fixed;
+    text-align: justify;
+    z-index: 998;
+}
+header:hover{
     background-color: white;
-    z-index: 999;
+}
+header:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
 }
 .cabecalho__item{
+    margin-top: 11px;
     display: inline-block;
-    position: relative;
-    text-align: justify;
-    height: 60px;
-    border: 1px solid red;
-    width: 32%;
 }
+.cabecalho__item.catalogo, .cabecalho__item.outros{
+    width: 40%;
+}
+
 
 /*cabecalho__item catalogo*/
-.item_Catalogo{
-    display: inline-block;
-    position: absolute;
+.cabecalho__item.catalogo{
+    vertical-align: 12px;
+}
+.item_catalogo.primeiro{
+    margin-left: 30px;
+}
+.item_catalogo{
     text-decoration: none;
     color: black;
+    margin: 0px 10px;
+    font-weight: bold;
 }
 
-
-
-/* cabecalho__item logo */
-.itemLogo__link{
-    position: absolute;
-    top: 15px;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
+/* cabecalho__item logo*/
 .itemLogo__img{
     width: 170px;
 }
 
 /* cabecalho__item outros */
 .cabecalho__item.outros{
-    right: 0px;
+    text-align: right;
+}
+.itemOutros_img{
+    height: 25px;
+    margin: 0px 7px;
+}
+.itemOutros_link.ultima{
+    margin-right: 15px;
 }

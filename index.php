@@ -8,9 +8,12 @@
     <title>Gamm Clothing</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./static/cabecalho.css">
+    
 </head>
 <body>
     <?php include './static/cabecalho.php';?>
+    <img class="background_img" src="./static/img/background-img1.png" alt="">
+
     <div class="produtos">
         <div class="Produtos_cabecalho">
             <h1>Camisetas masculinas</h1>
@@ -20,28 +23,66 @@
             <tr>
                 <td>	
                     <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
+                        <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td>	
                     <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
+                        <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td>	
                     <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
+                        <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td>	
                     <a class="linkProduto" href="#">					
-                        <img src="./produto/img/camiseta_gamm_preta" width="250px" alt="">
+                        <img src="./produto/img/camiseta_gamm_masculina_preta" width="250px" alt="">
+                        <p class="itemProduto nome">Camiseta Gamm</p>
+                        <p class="itemProduto preco">R$ 30,00</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="produtos">
+        <div class="Produtos_cabecalho">
+            <h1>Camisetas femininas</h1>
+            <a class="link_verMais" href="#">VER MAIS</a>
+        </div>
+        <table>
+            <tr>
+                <td>	
+                    <a class="linkProduto" href="#">					
+                        <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
+                        <p class="itemProduto nome">Camiseta Gamm</p>
+                        <p class="itemProduto preco">R$ 30,00</p>
+                    </a>
+                </td>
+                <td>	
+                    <a class="linkProduto" href="#">					
+                        <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
+                        <p class="itemProduto nome">Camiseta Gamm</p>
+                        <p class="itemProduto preco">R$ 30,00</p>
+                    </a>
+                </td>
+                <td>	
+                    <a class="linkProduto" href="#">					
+                        <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
+                        <p class="itemProduto nome">Camiseta Gamm</p>
+                        <p class="itemProduto preco">R$ 30,00</p>
+                    </a>
+                </td>
+                <td>	
+                    <a class="linkProduto" href="#">					
+                        <img src="./produto/img/camiseta_gamm_feminina_preta" width="250px" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
@@ -51,3 +92,18 @@
     </div>
 </body>
 </html>
+<script type="text/javascript">
+    window.onscroll = function() {mudarCabecalho()};
+
+    let header = document.getElementById('cabecalho');
+    function mudarCabecalho() {
+        let nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if(nVScroll>35){
+            header.style.backgroundColor= 'white';
+            header.style.top="0";
+        }else{
+            header.style.backgroundColor= '';
+            header.style.top="35px";
+        } 
+    }
+</script>
