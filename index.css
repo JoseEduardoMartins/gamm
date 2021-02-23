@@ -11,6 +11,34 @@ body {
     width: 100%;
 }
 
+.produtos_painel{
+    position: relative;
+    width: calc( 100% - 100px);
+    margin: 60px auto 60px;
+    border: 1px solid black;
+}
+.painel{
+    border: 1px solid black;
+}
+.painel.img{
+    width: 552px;
+}
+.painel.info{
+    text-align: center;
+}
+.painel_link_verMais{
+    border: 1px solid black;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 14px 8px;
+    font-weight: bold;
+    font-size: small;
+}
+
+
+
 /*produtos*/
 .produtos{
     position: relative;
@@ -32,6 +60,10 @@ body {
     top: 1px;
     font-weight: bold;
     font-size: small;
+}
+.link_verMais:hover{
+    background-color: white;
+    color: black;
 }
 .table_produtos{
     position: relative;

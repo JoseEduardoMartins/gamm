@@ -24,11 +24,11 @@
         function mudarBorda(){
             let img_pesquisa1 = document.getElementById("item_pesquisar1");
             img_pesquisa1.style.borderRadius="0px";
-            img_pesquisa1.style.borderBottom="1px solid #D3D3D3";
+            img_pesquisa1.style.borderBottom="1px solid #A9A9A9";
         }
         function remudarBorda(){
             let img_pesquisa1 = document.getElementById("item_pesquisar1");
-            img_pesquisa1.style.borderBottom="0px solid #D3D3D3";
+            img_pesquisa1.style.borderBottom="0px solid #A9A9A9";
         }
     </script>
 </head>
@@ -60,6 +60,19 @@
     </header>
 
     <img class="background_img" src="./static/img/background-img1.png" alt="">
+
+    <table class="produtos_painel">
+        <tr>
+            <td class="painel img">
+                <img class="primeira_img" src="./static/img/primeira_img1.png" alt="">
+            </td>
+            <td class="painel info">
+                <h1>Coleção Gratidão - 2021</h1>
+                <a class="painel_link_verMais" href="#">VER MAIS</a>
+            </td>
+        </tr>
+    </table>
+    
 
     <div class="produtos">
         <div class="Produtos_cabecalho">
@@ -150,11 +163,11 @@
             header.style.backgroundColor= 'white';
             header.style.top="0";
             img_pesquisa1.style.borderRadius="0px";
-            img_pesquisa1.style.borderBottom="1px solid #D3D3D3";
+            img_pesquisa1.style.borderBottom="1px solid #A9A9A9";
         }else{
             header.style.backgroundColor= '';
             header.style.top="35px";
-            img_pesquisa1.style.borderBottom="0px solid #D3D3D3";
+            img_pesquisa1.style.borderBottom="0px solid #A9A9A9";
         } 
     }
 </script>
