@@ -15,19 +15,29 @@ body {
     position: relative;
     width: calc( 100% - 100px);
     margin: 60px auto 60px;
-    border: 1px solid black;
-}
-.painel{
-    border: 1px solid black;
 }
 .painel.img{
     width: 552px;
 }
-.painel.info{
-    text-align: center;
+.painel_img{
+    width: 552px;
 }
-.painel_link_verMais{
-    border: 1px solid black;
+.painel.info1{
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+.painel.info2{
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+.itens_info{
+    margin-bottom: 10px;
+}
+.itens_info.painel_link_verMais{
     border-radius: 3px;
     text-decoration: none;
     background-color: black;
