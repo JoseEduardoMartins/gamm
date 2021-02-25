@@ -51,7 +51,7 @@ header:after{
     display: inline-block;
 }
 .cabecalho__item.catalogo, .cabecalho__item.outros{
-    width: 40%;
+    width: 270px;
 }
 
 
@@ -116,4 +116,12 @@ header:after{
 }
 .itemOutros_link.ultima{
     margin-right: 15px;
+}
+@media (max-width: 900px){
+.CabecalhoItemPesquisa{
+    width: 170px;  
+} 
+.itemPesquisar.input{
+    width: 170px;
+
 }

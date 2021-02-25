@@ -93,3 +93,24 @@ body {
 .img_produto{
     width: 250px;
 }
+
+@media (max-width: 1087px){
+.painel.img{
+    width: 452px;
+}
+.painel_img{
+    width: 452px;
+}
+/*produto*/
+.img_produto{
+    width: 150px;
+}
+}
+@media (max-width: 900px){
+.painel.img{
+    width: 352px;
+}
+.painel_img{
+    width: 352px;
+}
+}

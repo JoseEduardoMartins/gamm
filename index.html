@@ -31,6 +31,22 @@
             let img_pesquisa1 = document.getElementById("item_pesquisar1");
             img_pesquisa1.style.borderBottom="0px solid #A9A9A9";
         }
+        function mudarImgInstagram(){
+            let imgInstagram = document.getElementById("imgInstagram");
+            imgInstagram.src="./static/icon/icon_instagram_cinza";
+        }
+        function remudarImgInstagram(){
+            let imgInstagram = document.getElementById("imgInstagram");
+            imgInstagram.src="./static/icon/icon_instagram_branco";
+        }
+        function mudarImgWhatsapp(){
+            let imgWhatsapp = document.getElementById("imgWhatsapp");
+            imgWhatsapp.src="./static/icon/icon_Whatsapp_cinza";
+        }
+        function remudarImgWhatsapp(){
+            let imgWhatsapp = document.getElementById("imgWhatsapp");
+            imgWhatsapp.src="./static/icon/icon_Whatsapp_branco";
+        }
     </script>
 </head>
 <body>
@@ -51,12 +67,12 @@
         <div class="cabecalho__item outros">
             <form id="item_pesquisar1" class="CabecalhoItemPesquisa">
                 <input class="itemPesquisar input" type="text" name="pesquisa" minlength="1" required placeholder="Oque você procura?">
-                <input onclick='reverter_pesquisa()' class="itemPesquisar buttom" type="image" src="./static/icon/icon_pesquisa.png"  name="botaoPesquisar">
+                <input onclick='reverter_pesquisa()' class="itemPesquisar buttom" type="image" src="./static/icon/icon_pesquisa_preto.png"  name="botaoPesquisar">
             </form>
-            <input id="item_pesquisar2" class="itemOutros_img" onclick='pesquisar()' type="image" src="./static/icon/icon_pesquisa.png" alt="icone de pesquisa">
-            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_usuario.png" alt="icone de usuario"></a>
-            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_coracao.png" alt="icone de favoritos"></a>
-            <a href="#" class="itemOutros_link ultima"><img class="itemOutros_img" src="./static/icon/icon_carrinho.png" alt="icone do carrinho"></a>
+            <input id="item_pesquisar2" class="itemOutros_img" onclick='pesquisar()' type="image" src="./static/icon/icon_pesquisa_preto.png" alt="icone de pesquisa">
+            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_usuario_preto.png" alt="icone de usuario"></a>
+            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="./static/icon/icon_coracao_preto.png" alt="icone de favoritos"></a>
+            <a href="#" class="itemOutros_link ultima"><img class="itemOutros_img" src="./static/icon/icon_carrinho_preto.png" alt="icone do carrinho"></a>
         </div>
     </header>
 
@@ -194,13 +210,15 @@
                     </td>
                     <td class="footer_info_td">
                         <h3 class="subtitulo_footer">REDES SOCIAIS</h3>
-                        <a class="footer_link" target="_blank" href="https://www.instagram.com/gamm_clothing/"><img class="img_redes" src="./static/icon/icon_instagram_branco" alt="Logo instagram"></a>
+                        <a onmouseover="mudarImgInstagram()" onmouseout="remudarImgInstagram()" class="footer_link" target="_blank" href="https://www.instagram.com/gamm_clothing/"><img id="imgInstagram" class="img_redes" src="./static/icon/icon_instagram_branco" alt="Logo instagram"></a>
+
+                        <a onmouseover="mudarImgWhatsapp()" onmouseout="remudarImgWhatsapp()" class="footer_link" target="_blank" href="https://api.whatsapp.com/send?phone=5548996360340"><img id="imgWhatsapp" class="img_redes" src="./static/icon/icon_Whatsapp_branco" alt="Logo Whatsapp"></a>
                     </td>
                 </tr>
             </table>
         </div>    
         <div class="item copyright">
-            <script> now = new Date; document.write ("<p class='copyright_paragrafo'>© Todos os direitos reservados - Gamm " + now.getFullYear()+"</p>");</script>
+            <script> let now = new Date; document.write ("<p class='copyright_paragrafo'>© " + now.getFullYear()+" Gamm Clothing - Todos os direitos reservados</p>");</script>
             
         </div>
     </footer>
