@@ -200,7 +200,8 @@
             </table>
         </div>    
         <div class="item copyright">
-            <p class="copyright_paragrafo">© Todos os direitos reservados <?php echo date("Y"); ?> - Gamm</p>
+            <script> now = new Date; document.write ("<p class='copyright_paragrafo'>© Todos os direitos reservados - Gamm " + now.getFullYear()+"</p>");</script>
+            
         </div>
     </footer>
 </body>
