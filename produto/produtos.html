@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamm Clothing</title>
+    <link rel="stylesheet" href="./produtos.css">
+    <link rel="stylesheet" href="../static/cabecalho.css">
+    <link rel="stylesheet" href="../static/rodape.css">
+    <script type="text/javascript">
+        
+        function pesquisar(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.visibility="visible";
+            let img_pesquisa2 = document.getElementById("item_pesquisar2");
+            img_pesquisa2.style.visibility="hidden";
+        }
+        function reverter_pesquisa(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.visibility="hidden";
+            let img_pesquisa2 = document.getElementById("item_pesquisar2");
+            img_pesquisa2.style.visibility="visible";
+        }
+        function mudarBorda(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.borderRadius="0px";
+            img_pesquisa1.style.borderBottom="1px solid #A9A9A9";
+        }
+        function remudarBorda(){
+            let img_pesquisa1 = document.getElementById("item_pesquisar1");
+            img_pesquisa1.style.borderBottom="0px solid #A9A9A9";
+        }
+        function mudarImgInstagram(){
+            let imgInstagram = document.getElementById("imgInstagram");
+            imgInstagram.src="./static/icon/icon_instagram_cinza";
+        }
+        function remudarImgInstagram(){
+            let imgInstagram = document.getElementById("imgInstagram");
+            imgInstagram.src="./static/icon/icon_instagram_branco";
+        }
+        function mudarImgWhatsapp(){
+            let imgWhatsapp = document.getElementById("imgWhatsapp");
+            imgWhatsapp.src="./static/icon/icon_Whatsapp_cinza";
+        }
+        function remudarImgWhatsapp(){
+            let imgWhatsapp = document.getElementById("imgWhatsapp");
+            imgWhatsapp.src="./static/icon/icon_Whatsapp_branco";
+        }
+    </script>
+</head>
+<body>
+    <div class="pre-cabecalho">
+        <p class="frete"><img class="caminhao" src="../static/icon/icon_caminhao.png" alt=""> Frete Grátis nas compras acima de R$250,00.</p>
+        <a href="https://api.whatsapp.com/send?phone=5548996360340" target="_blank" class="link_WhatsApp"><img class="logo_WhatsApp" src="../static/icon/icon_whatsApp.png" alt="Logo do whatsApp"> (48) 99636-0340</a>
+    </div>
+    <header onmouseover="mudarBorda()" onmouseout="remudarBorda()" id="cabecalho">
+        <div id="item_catalogo" class="cabecalho__item catalogo">
+            <a href="#" class="item_catalogo primeiro">Homem</a>  
+            <a href="#" class="item_catalogo ">Mulher</a>  
+            <a href="#" class="item_catalogo " title="Indisponivel!">Criança</a>  
+        </div> 
+        <div class="cabecalho__item logo">
+            <a class="itemLogo__link" href="../index.html"><img id="logo_img" class="itemLogo__img" src="../static/img/logoGamm.png" alt=""></a>
+        </div> 
+        <div class="cabecalho__item outros">
+            <form id="item_pesquisar1" class="CabecalhoItemPesquisa">
+                <input class="itemPesquisar input" type="text" name="pesquisa" minlength="1" required placeholder="Oque você procura?">
+                <input onclick='reverter_pesquisa()' class="itemPesquisar buttom" type="image" src="../static/icon/icon_pesquisa_preto.png"  name="botaoPesquisar">
+            </form>
+            <input id="item_pesquisar2" class="itemOutros_img" onclick='pesquisar()' type="image" src="../static/icon/icon_pesquisa_preto.png" alt="icone de pesquisa">
+            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="../static/icon/icon_usuario_preto.png" alt="icone de usuario"></a>
+            <a href="#" class="itemOutros_link"><img class="itemOutros_img" src="../static/icon/icon_coracao_preto.png" alt="icone de favoritos"></a>
+            <a href="#" class="itemOutros_link ultima"><img class="itemOutros_img" src="../static/icon/icon_carrinho_preto.png" alt="icone do carrinho"></a>
+        </div>
+    </header>
+
+</body>
+</html>

@@ -57,7 +57,7 @@
     </div>
     <header onmouseover="mudarBorda()" onmouseout="remudarBorda()" id="cabecalho">
         <div id="item_catalogo" class="cabecalho__item catalogo">
-            <a href="#" class="item_catalogo primeiro">Homem</a>  
+            <a href="./produto/produtos.html" class="item_catalogo primeiro">Homem</a>  
             <a href="#" class="item_catalogo ">Mulher</a>  
             <a href="#" class="item_catalogo " title="Indisponivel!">Criança</a>  
         </div> 
@@ -88,28 +88,28 @@
             <tr>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta" alt="imagem ">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="imagem ">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta" alt="">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta" alt="">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta" alt="">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
@@ -125,7 +125,7 @@
             </td>
             <td class="painel info1">
                 <h1 class="itens_info">Coleção Feminina</h1>
-                <p class="itens_info">Chegou a nova coleção feminina 'gratidão' 2021</p>
+                <p class="itens_info">Chegou a nova coleção feminina 'gratidão' 2021</p> <br>
                 <a class="itens_info painel_link_verMais" href="#">VER MAIS</a>
             </td>
         </tr>
@@ -141,28 +141,28 @@
             <tr>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta" alt="">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta" alt="">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta" alt="">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
                 <td class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta" alt="">
+                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
@@ -174,7 +174,7 @@
         <tr>
             <td class="painel info2">
                 <h1 class="itens_info">Coleção Masculina</h1>
-                <p class="itens_info">Chegou a nova coleção masculina 'gratidão' 2021</p>
+                <p class="itens_info">Chegou a nova coleção masculina 'gratidão' 2021</p> <br>
                 <a class="itens_info painel_link_verMais" href="#">VER MAIS</a>
             </td>
             <td class="painel img">
@@ -231,7 +231,7 @@
     let img_pesquisa1 = document.getElementById("item_pesquisar1");
     function mudarCabecalho() {
         let nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        if(nVScroll>35){
+        if(nVScroll>5){
             header.style.backgroundColor= 'white';
             header.style.top="0";
             img_pesquisa1.style.borderRadius="0px";

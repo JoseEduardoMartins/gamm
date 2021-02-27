@@ -56,6 +56,8 @@ header:after{
 
 
 /*cabecalho__item catalogo*/
+
+
 .cabecalho__item.catalogo{
     vertical-align: 12px;
 }
@@ -67,6 +69,9 @@ header:after{
     color: black;
     margin: 0px 10px;
     font-weight: bold;
+}
+.item_catalogo:hover{
+    border-bottom: 1px solid black;
 }
 
 /* cabecalho__item logo*/

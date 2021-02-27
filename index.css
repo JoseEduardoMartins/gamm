@@ -38,13 +38,19 @@ body {
     margin-bottom: 10px;
 }
 .itens_info.painel_link_verMais{
-    border-radius: 3px;
+    border: 1px solid #363636;
+    border-radius: 40px;
     text-decoration: none;
-    background-color: black;
+    background-color: #363636;
     color: white;
-    padding: 8px 14px 8px;
-    font-weight: bold;
+    padding: 14px 37px;
     font-size: small;
+}
+.itens_info.painel_link_verMais:hover{
+    border: 1px solid #C0C0C0;
+    background-color: white;
+    color: black;
+    transition-delay: .5s all;
 }
 
 
@@ -59,21 +65,22 @@ body {
     position: relative;
 }
 .link_verMais{
-    border: 1px solid black;
-    border-radius: 3px;
+    border: 1px solid #363636;
+    border-radius: 40px;
     text-decoration: none;
-    background-color: black;
+    background-color: #363636;
     color: white;
-    padding: 8px 14px 8px;
+    padding: 14px 37px;
     position: absolute;
     right: 0px;
     top: 1px;
-    font-weight: bold;
     font-size: small;
 }
 .link_verMais:hover{
+    border: 1px solid #C0C0C0;
     background-color: white;
     color: black;
+    transition-delay: .5s all;
 }
 .table_produtos{
     position: relative;
@@ -89,6 +96,9 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+.linkProduto:hover{
+    text-decoration: underline;
 }
 .img_produto{
     width: 250px;
