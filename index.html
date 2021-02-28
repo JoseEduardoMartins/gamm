@@ -47,6 +47,16 @@
             let imgWhatsapp = document.getElementById("imgWhatsapp");
             imgWhatsapp.src="./static/icon/icon_whatsapp_branco.png";
         }
+        function mudarImgProduto(id){
+            let imgProduto = document.getElementById(id);
+            let nomedaimgem = id.replace("1", "2");
+            imgProduto.src=`./produto/img/${nomedaimgem}`;
+        }
+        function remudarImgProduto(id){
+            let imgProduto = document.getElementById(id);
+            let nomedaimgem = id.replace("2", "1");
+            imgProduto.src=`./produto/img/${nomedaimgem}`;
+        }
     </script>
 </head>
 <body>
@@ -57,9 +67,9 @@
     </div>
     <header onmouseover="mudarBorda()" onmouseout="remudarBorda()" id="cabecalho">
         <div id="item_catalogo" class="cabecalho__item catalogo">
-            <a href="./produto/produtos.html" class="item_catalogo primeiro">Homem</a>  
-            <a href="#" class="item_catalogo ">Mulher</a>  
-            <a href="#" class="item_catalogo " title="Indisponivel!">Criança</a>  
+            <a href="./produto/produtos.html" class="item_catalogo primeiro">Masculino</a>  
+            <a href="#" class="item_catalogo ">Feminino</a>  
+            <a href="#" class="item_catalogo " title="Indisponivel!">Infantil</a>  
         </div> 
         <div class="cabecalho__item logo">
             <a class="itemLogo__link" href="#"><img id="logo_img" class="itemLogo__img" src="./static/img/logoGamm.png" alt=""></a>
@@ -86,30 +96,30 @@
         </div>
         <table class="table_produtos">
             <tr>
-                <td class="td_produtos">	
+                <td onmouseover="mudarImgProduto('cafepraaa1.png')" onmouseout="remudarImgProduto('cafepraaa1.png')" class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="imagem ">
+                        <img id="cafepraaa1.png" class="img_produto" src="./produto/img/cafepraaa1.png" alt="imagem ">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td class="td_produtos">	
+                <td onmouseover="mudarImgProduto('cafeprbbb1.png')" onmouseout="remudarImgProduto('cafeprbbb1.png')" class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="">
+                        <img id="cafeprbbb1.png" class="img_produto" src="./produto/img/cafeprbbb1.png" alt="">
+                        <p class="itemProduto nome">Camiseta Gamm</p>
+                        <p class="itemProduto preco">R$ 30,00</p>
+                    </a>
+                </td>>
+                <td onmouseover="mudarImgProduto('cafeprccc1.png')" onmouseout="remudarImgProduto('cafeprccc1.png')" class="td_produtos">	
+                    <a class="linkProduto" href="#">					
+                        <img id="cafeprccc1.png" class="img_produto" src="./produto/img/cafeprccc1.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td class="td_produtos">	
+                <td onmouseover="mudarImgProduto('cafeprddd1.png')" onmouseout="remudarImgProduto('cafeprddd1.png')" class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="">
-                        <p class="itemProduto nome">Camiseta Gamm</p>
-                        <p class="itemProduto preco">R$ 30,00</p>
-                    </a>
-                </td>
-                <td class="td_produtos">	
-                    <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_feminina_preta.png" alt="">
+                        <img id="cafeprddd1.png" class="img_produto" src="./produto/img/cafeprddd1.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
@@ -139,30 +149,30 @@
         </div>
         <table class="table_produtos">
             <tr>
-                <td class="td_produtos">	
+                <td onmouseover="mudarImgProduto('camapraaa1.png')" onmouseout="remudarImgProduto('camapraaa1.png')" class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
+                        <img id="camapraaa1.png" class="img_produto" src="./produto/img/camapraaa1.png" alt="imagem de produto">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td class="td_produtos">	
+                <td onmouseover="mudarImgProduto('camaprbbb1.png')" onmouseout="remudarImgProduto('camaprbbb1.png')" class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
+                        <img id="camaprbbb1.png" class="img_produto" src="./produto/img/camaprbbb1.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td class="td_produtos">	
+                <td onmouseover="mudarImgProduto('camaprccc1.png')" onmouseout="remudarImgProduto('camaprccc1.png')" class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
+                        <img id="camaprccc1.png" class="img_produto" src="./produto/img/camaprccc1.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>
                 </td>
-                <td class="td_produtos">	
+                <td onmouseover="mudarImgProduto('camaprddd1.png')" onmouseout="remudarImgProduto('camaprddd1.png')" class="td_produtos">	
                     <a class="linkProduto" href="#">					
-                        <img class="img_produto" src="./produto/img/camiseta_gamm_masculina_preta.png" alt="">
+                        <img id="camaprddd1.png" class="img_produto" src="./produto/img/camaprddd1.png" alt="">
                         <p class="itemProduto nome">Camiseta Gamm</p>
                         <p class="itemProduto preco">R$ 30,00</p>
                     </a>

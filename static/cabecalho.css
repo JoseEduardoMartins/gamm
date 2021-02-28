@@ -51,7 +51,7 @@ header:after{
     display: inline-block;
 }
 .cabecalho__item.catalogo, .cabecalho__item.outros{
-    width: 270px;
+    width: 300px;
 }
 
 
