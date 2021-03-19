@@ -1,0 +1,55 @@
+#check{
+    display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 20px 15px;
+    position: fixed;
+    z-index: 999;
+}
+.barra{
+    background-color: #FAFAFA;
+    height: calc(100% - 100px);
+    width: 230px;
+    position: fixed;
+    transition: all .2s linear;
+    top: 100px;
+    overflow: hidden;
+}
+.barra:hover{
+    overflow: auto;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 2px
+}
+nav a{
+    text-decoration: none;
+    
+}
+.link{
+    background-color: #FAFAFA;
+    padding: 20px;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #424242;
+}
+.link:hover{
+    background-color: #E6E6E6;
+}
+#check:checked ~ .barra{
+    transform: translateX(-230px);
+}
+.barraLateral__perfil{
+    width: 229px;
+    height: 130px;
+    border-bottom: 1px solid #424242;
+    text-align: center;
+}
+.barraLateral__itens.principais{
+    border-bottom: 1px solid #6E6E6E;
+}
+.barraLateral__itens.secundarias{
+    border-bottom: 1px solid #6E6E6E;
+}

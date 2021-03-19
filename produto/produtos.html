@@ -52,7 +52,7 @@
 <body>
     <div class="pre-cabecalho">
         <p class="frete"><img class="caminhao" src="../static/icon/icon_caminhao.png" alt=""> Frete Grátis nas compras acima de R$250,00.</p>
-        <a href="https://api.whatsapp.com/send?phone=5548996360340" target="_blank" class="link_WhatsApp"><img class="logo_WhatsApp" src="../static/icon/icon_whatsApp.png" alt="Logo do whatsApp"> (48) 99636-0340</a>
+        <a href="https://api.whatsapp.com/send?phone=5548996360340" target="_blank" class="link_WhatsApp"><img class="logo_WhatsApp" src="../static/icon/icon_whatsApp_verde.png" alt="Logo do whatsApp"> (48) 99636-0340</a>
     </div>
     <header onmouseover="mudarBorda()" onmouseout="remudarBorda()" id="cabecalho">
         <div id="item_catalogo" class="cabecalho__item catalogo">
@@ -74,6 +74,28 @@
             <a href="#" class="itemOutros_link ultima"><img class="itemOutros_img" src="../static/icon/icon_carrinho_preto.png" alt="icone do carrinho"></a>
         </div>
     </header>
+    <div class="pos-cabecalho">
+        <div class="links_caminho">
+            <a class="link_caminho" href="#">Inicio</a> / <a class="link_caminho" href="#">Masculino</a>
+        </div>
+        <div class="cabecalho_produtos">
+            <h2>Marculino</h2> 
+            <div class="checkboxFilter">
+                <input id="check" type="checkbox"  onclick="checarInput()" name="barraLateral__checkMenu">
+                <label id="icone" for="check">Filtros<img class="icon_filters" src="../static/icon/icon_ajuste.png"></label>
+            </div>
+            <div class="opcoesOrdem">
+                <label>Ordenar por </label>
+                <select name="ordem" iid="appearance-select">>
+                    <option value="destaques">Destaques</option>
+                    <option value="lancamentos">Lançamentos</option>
+                    <option value="maiorDesconto">Maior Desconto</option>
+                    <option value="menorPreco">Menor Preço</option>
+                    <option value="maiorPreco">Marior Preço</option>
+                </select>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
